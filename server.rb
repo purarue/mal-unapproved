@@ -116,7 +116,7 @@ get "/raw" do
   send_file($json_tar, { :disposition => "attachment".freeze, :filename => File.basename($json_tar) })
 end
 
-# using https://github.com/seanbreckenridge/darker_errors
+# using https://github.com/purarue/darker_errors
 not_found do
   send_file $not_found_file
 end
